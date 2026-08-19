@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CyberShield — parcours de cybersensibilisation pour les collaborateurs.">
+  <title>CyberShield — Academy | Cybersensibilisation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar"><div class="container topbar-inner"><span><i></i> CAMPAGNE CYBERSÉCURITÉ 2026</span><span>La sécurité numérique est l'affaire de tous.</span></div></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#accueil" class="brand">
+        <span class="brand-mark"><svg viewBox="0 0 32 32"><path d="M16 3l11 4v8c0 7.4-4.2 11.9-11 15-6.8-3.1-11-7.6-11-15V7l11-4z" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M11 16l3.1 3.1L21.5 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span>Cyber<span>Shield</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#accueil" class="active">Accueil</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#menaces">Menaces</a>
+        <a href="#phishing">Phishing</a>
+        <a href="#quiz">Évaluation</a>
+        <a href="#ressources">Ressources</a>
+        <a href="#quiz" class="nav-cta">Commencer <b>→</b></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> ACADEMY · CYBERSÉCURITÉ · ENTREPRISE</div>
+          <h1>Développez les bons réflexes.<br><em>Protégez ce qui compte.</em></h1>
+          <p class="hero-lead">Un parcours simple et interactif pour comprendre les cybermenaces, adopter les bons gestes et devenir un véritable acteur de la sécurité de votre organisation.</p>
+          <div class="hero-actions">
+            <a href="#parcours" class="btn btn-primary">Démarrer mon parcours <span>→</span></a>
+            <a href="#quiz" class="btn btn-ghost">Évaluer mon niveau</a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>10</strong><span>questions</span></div>
+            <div><strong>8</strong><span>menaces clés</span></div>
+            <div><strong>09</strong><span>bonnes pratiques</span></div>
+            <div class="meta-note"><span class="secure-dot"></span> Parcours 100% interactif</div>
+          </div>
+        </div>
+
+        <div class="hero-dashboard reveal">
+          <div class="dashboard-card">
+            <div class="dash-head"><div><span class="tiny-label">MON PARCOURS</span><strong>CyberShield Academy</strong></div><span class="dash-status">ACTIF</span></div>
+            <div class="dash-progress"><span></span></div>
+            <div class="dash-progress-label"><span>Progression générale</span><b id="heroProgress">0%</b></div>
+            <div class="dash-modules">
+              <div class="module done"><span>01</span><div><b>Comprendre les menaces</b><small>8 menaces essentielles</small></div><i>✓</i></div>
+              <div class="module current"><span>02</span><div><b>Adopter les bons réflexes</b><small>Checklist interactive</small></div><i>→</i></div>
+              <div class="module"><span>03</span><div><b>Tester ses connaissances</b><small>Quiz de 10 questions</small></div><i>○</i></div>
+            </div>
+            <div class="dash-footer"><span><i class="secure-dot"></i> Votre progression est locale</span><span>01 / 03</span></div>
+          </div>
+          <div class="dash-floating float-score"><span>●</span><div><small>Protection</small><b id="heroProtection">0%</b></div></div>
+          <div class="dash-floating float-alert"><span>!</span><div><small>À retenir</small><b>Ne jamais partager ses identifiants</b></div></div>
+        </div>
+      </div>
+      <div class="container trust-strip">
+        <span>UNE CULTURE DE SÉCURITÉ SE CONSTRUIT AU QUOTIDIEN</span>
+        <div><b>01</b> Apprendre</div><div><b>02</b> Vérifier</div><div><b>03</b> Signaler</div><div><b>04</b> Protéger</div>
+      </div>
+    </section>
+
+    <section class="section intro-section" id="parcours">
+      <div class="container">
+        <div class="section-intro reveal">
+          <div><span class="kicker">01 · LE PARCOURS</span><h2>Une sensibilisation pensée<br><em>pour les vrais usages.</em></h2></div>
+          <p>CyberShield reprend les codes d'une plateforme de formation institutionnelle : parcours lisible, progression visible, contenus courts et mise en pratique immédiate.</p>
+        </div>
+        <div class="path-grid">
+          <article class="path-card featured reveal"><span class="path-num">01</span><div class="path-icon blue">◈</div><h3>Comprendre</h3><p>Découvrez les menaces les plus courantes et apprenez à reconnaître leurs signaux.</p><button data-scroll="#menaces">Explorer les menaces <b>→</b></button></article>
+          <article class="path-card reveal"><span class="path-num">02</span><div class="path-icon orange">✓</div><h3>Adopter</h3><p>Transformez les recommandations en habitudes avec une checklist interactive.</p><button data-scroll="#bonnes-pratiques">Voir les bonnes pratiques <b>→</b></button></article>
+          <article class="path-card reveal"><span class="path-num">03</span><div class="path-icon blue">?</div><h3>Évaluer</h3><p>Testez vos connaissances avec 10 questions et recevez un feedback pédagogique.</p><button data-scroll="#quiz">Passer le quiz <b>→</b></button></article>
+          <article class="path-card reveal"><span class="path-num">04</span><div class="path-icon green">↗</div><h3>Progresser</h3><p>Votre score global combine votre quiz et vos bonnes pratiques pour suivre votre évolution.</p><button data-scroll="#score">Voir mon score <b>→</b></button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats-section">
+      <div class="container stats-grid">
+        <div class="stat-copy reveal"><span class="kicker">02 · POURQUOI AGIR ?</span><h2>Le facteur humain<br>est notre <em>première défense.</em></h2><p>La technologie protège, mais les bons réflexes empêchent souvent l'incident avant même qu'il ne commence.</p><a href="#phishing" class="text-link">Apprendre à détecter un phishing →</a></div>
+        <div class="stat-card reveal"><strong>95<span>%</span></strong><h3>des incidents impliquent le facteur humain*</h3><p>Un clic, une pièce jointe ou une information divulguée peut devenir le point de départ d'une attaque.</p></div>
+        <div class="stat-card dark reveal"><strong>1<span> clic</span></strong><h3>peut suffire à compromettre un compte</h3><p>La vigilance doit rester active, même face à un message qui semble provenir d'une source connue.</p></div>
+      </div>
+    </section>
+
+    <section class="section threats-section" id="menaces">
+      <div class="container">
+        <div class="section-intro light reveal"><div><span class="kicker">03 · COMPRENDRE LES MENACES</span><h2>8 risques à connaître,<br><em>8 réflexes à adopter.</em></h2></div><p>Parcourez les fiches et découvrez rapidement ce qu'est la menace, comment elle agit et comment réduire le risque.</p></div>
+        <div class="threat-grid" id="threatGrid"></div>
+      </div>
+    </section>
+
+    <section class="section phishing-section" id="phishing">
+      <div class="container">
+        <div class="section-intro reveal"><div><span class="kicker">04 · CAS PRATIQUE</span><h2>Saurez-vous repérer<br><em>le piège ?</em></h2></div><p>Les attaques efficaces ne ressemblent pas toujours à des attaques. Analysez les indices avant de cliquer.</p></div>
+        <div class="phishing-grid">
+          <div class="email-window reveal">
+            <div class="email-toolbar"><div><i></i><i></i><i></i></div><span>Messagerie professionnelle</span><b>09:42</b></div>
+            <div class="email-body">
+              <div class="mail-from"><span class="mail-avatar">IT</span><div><b>Support Sécurité</b><small>support-securite@cyber-shield-verify.com</small></div></div>
+              <div class="mail-title"><label>URGENT</label> Votre compte sera désactivé</div>
+              <p>Bonjour,</p><p>Une activité inhabituelle a été détectée. Pour éviter la désactivation de votre compte, confirmez vos informations dans les <strong>30 prochaines minutes.</strong></p>
+              <a href="#phishing" class="suspicious-link">https://cyber-shield-verify.com/login</a><p>Merci de votre coopération.</p>
+              <small class="signature">Service Informatique</small>
+            </div>
+            <div class="risk-tag tag-a"><b>01</b> Domaine suspect</div><div class="risk-tag tag-b"><b>02</b> Pression / urgence</div><div class="risk-tag tag-c"><b>03</b> Demande sensible</div>
+          </div>
+          <div class="reflex-panel reveal">
+            <span class="kicker">5 RÉFLEXES ESSENTIELS</span>
+            <div class="reflex"><b>01</b><div><strong>Vérifier l'expéditeur</strong><span>Le nom affiché ne suffit pas.</span></div></div>
+            <div class="reflex"><b>02</b><div><strong>Ne pas cliquer immédiatement</strong><span>La précipitation est l'alliée de l'attaquant.</span></div></div>
+            <div class="reflex"><b>03</b><div><strong>Contrôler l'URL</strong><span>Un domaine légèrement différent peut être un signal.</span></div></div>
+            <div class="reflex"><b>04</b><div><strong>Ne jamais donner son mot de passe</strong><span>Un service légitime ne vous le demande pas par email.</span></div></div>
+            <div class="reflex"><b>05</b><div><strong>Signaler</strong><span>En cas de doute, transmettez le message au référent.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section practice-section" id="bonnes-pratiques">
+      <div class="container">
+        <div class="section-intro light reveal"><div><span class="kicker">05 · PASSER À L'ACTION</span><h2>Votre bouclier<br><em>se construit ici.</em></h2></div><p>Cochez les habitudes que vous appliquez déjà. La progression est calculée instantanément dans votre navigateur.</p></div>
+        <div class="practice-layout">
+          <div class="checklist-card reveal" id="checklist"></div>
+          <div class="protection-card reveal"><div class="protection-ring" id="checkScoreRing"><span id="checkScore">0%</span></div><span>VOTRE NIVEAU DE PROTECTION</span><strong id="checkMessage">Commencez votre auto-évaluation</strong><div class="mini-progress"><i id="checkBar"></i></div><small id="checkCount">0 / 9 bonnes pratiques</small><a href="#quiz" class="btn btn-primary small-btn">Continuer vers le quiz →</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section incident-section">
+      <div class="container">
+        <div class="incident-banner reveal">
+          <div class="incident-mark">!</div>
+          <div class="incident-copy"><span class="kicker">06 · EN CAS D'INCIDENT</span><h2>Stop. Prévenez. Protégez.</h2><p>Vous pensez avoir été victime d'une cyberattaque ? N'essayez pas de résoudre seul le problème.</p></div>
+          <div class="incident-actions"><button class="btn btn-danger" id="reportBtn">Signaler un incident</button><span>Conservez les preuves utiles</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="container">
+        <div class="quiz-intro reveal"><span class="kicker">07 · ÉVALUATION</span><h2>Testez votre<br><em>niveau de sensibilisation.</em></h2><p>10 questions · correction immédiate · explications pédagogiques · résultat final</p></div>
+        <div class="quiz-shell reveal">
+          <div class="quiz-top"><div><span id="questionNumber">Question 1 / 10</span><strong id="quizLevel">Niveau : Débutant</strong></div><div class="quiz-progress"><span id="quizProgress"></span></div></div>
+          <div id="quizQuestion" class="quiz-question"></div><div id="quizAnswers" class="quiz-answers"></div><div id="quizFeedback" class="quiz-feedback" hidden></div>
+          <div class="quiz-actions"><span id="answerStatus">Sélectionnez une réponse</span><button class="btn btn-primary" id="nextQuestion" disabled>Question suivante →</button></div>
+        </div>
+        <div class="result-card" id="quizResult" hidden><div class="result-badge">✓</div><span class="kicker">RÉSULTAT FINAL</span><h2><span id="resultScore">0 / 10</span></h2><div class="result-circle" id="resultCircle"><span id="resultPercent">0%</span></div><p id="resultLevel">Sensibilisation à renforcer</p><div class="result-stats"><div><strong id="correctCount">0</strong><span>Bonnes réponses</span></div><div><strong id="wrongCount">0</strong><span>À revoir</span></div></div><div class="result-actions"><button class="btn btn-primary" id="restartQuiz">↻ Recommencer</button><a href="#bonnes-pratiques" class="btn btn-light">Revoir les bonnes pratiques</a></div></div>
+      </div>
+    </section>
+
+    <section class="section score-section" id="score">
+      <div class="container">
+        <div class="global-score reveal"><div><span class="kicker">08 · TABLEAU DE BORD</span><h2>Votre score<br><em>de sensibilisation.</em></h2><p>Un indicateur simple pour visualiser votre progression. Il combine votre quiz et vos bonnes pratiques.</p></div><div class="global-ring" id="globalRing"><span id="globalPercent">0%</span></div><div class="global-info"><small>STATUT</small><strong id="globalMessage">À renforcer</strong><span>Score global</span><div class="score-track"><i id="globalBar"></i></div><em>Continuez à apprendre et à vérifier vos réflexes.</em></div></div>
+      </div>
+    </section>
+
+    <section class="section resources-section" id="ressources">
+      <div class="container">
+        <div class="section-intro reveal"><div><span class="kicker">09 · RESSOURCES</span><h2>Approfondissez<br><em>vos connaissances.</em></h2></div><p>Des mini-guides pratiques pour poursuivre votre apprentissage après le parcours.</p></div>
+        <div class="resource-grid">
+          <button class="resource-card reveal" data-resource="phishing"><span>01</span><div><b>Guide anti-phishing</b><small>Identifier les messages frauduleux</small></div><i>→</i></button>
+          <button class="resource-card reveal" data-resource="password"><span>02</span><div><b>Guide mots de passe</b><small>Créer des secrets robustes</small></div><i>→</i></button>
+          <button class="resource-card reveal" data-resource="mfa"><span>03</span><div><b>Guide MFA</b><small>Renforcer l'accès aux comptes</small></div><i>→</i></button>
+          <button class="resource-card reveal" data-resource="mobile"><span>04</span><div><b>Sécurité mobile</b><small>Protéger smartphone et tablette</small></div><i>→</i></button>
+          <button class="resource-card reveal" data-resource="remote"><span>05</span><div><b>Télétravail sécurisé</b><small>Travailler à distance sereinement</small></div><i>→</i></button>
+          <button class="resource-card reveal" data-resource="incident"><span>06</span><div><b>Procédure incident</b><small>Savoir qui contacter et quoi faire</small></div><i>→</i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-inner reveal"><div><span class="kicker">PRÊT À COMMENCER ?</span><h2>Votre prochain bon réflexe<br>commence maintenant.</h2></div><a href="#quiz" class="btn btn-primary">Commencer l'évaluation <span>→</span></a></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-main"><div class="footer-brand"><a href="#accueil" class="brand"><span class="brand-mark"><svg viewBox="0 0 32 32"><path d="M16 3l11 4v8c0 7.4-4.2 11.9-11 15-6.8-3.1-11-7.6-11-15V7l11-4z" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M11 16l3.1 3.1L21.5 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Cyber<span>Shield</span></span></a><p>Ensemble, construisons une culture de cybersécurité.</p></div><div class="footer-links"><a href="#parcours">Parcours</a><a href="#menaces">Menaces</a><a href="#bonnes-pratiques">Bonnes pratiques</a><a href="#quiz">Évaluation</a><a href="#ressources">Ressources</a></div><div class="footer-status"><i></i> Plateforme active</div></div><div class="container footer-bottom"><span>© 2026 CyberShield — Tous droits réservés.</span><span>Sensibilisation interne · Version 2.0</span></div></footer>
+
+  <div class="modal" id="modal" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><div class="modal-dialog"><button class="modal-close" id="modalClose" aria-label="Fermer">×</button><div id="modalIcon" class="modal-icon">✦</div><span class="kicker">CYBERSÉCURITÉ</span><h2 id="modalTitle">Titre</h2><div id="modalBody"></div></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
